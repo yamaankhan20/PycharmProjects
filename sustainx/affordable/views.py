@@ -4,12 +4,12 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('hello')
+    return render(request, 'sustain-home/index.html')
 
 
-def about(request):
-    return HttpResponse('this is about page')
+def bio_packaging(request):
+    return render(request, 'sustain-inner/bio-packaging.html')
 
 
-def name_response(request, name):
-    return HttpResponse(f'hi, {name.capitalize()}')
+def investores_and_partners(request):
+    return render(request, 'sustain-inner/investores-and-partners.html')
