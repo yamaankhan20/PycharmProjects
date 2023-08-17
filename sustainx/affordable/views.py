@@ -8,8 +8,10 @@ def index(request):
 
 
 def bio_packaging(request):
-    return render(request, 'sustain-inner/bio-packaging.html')
+    return render(request, 'sustain-home/bio-packaging.html')
 
 
-def investores_and_partners(request):
-    return render(request, 'sustain-inner/investores-and-partners.html')
+def investores_and_partners(request, name):
+    return render(request, 'sustain-home/investores-and-partners.html', {
+        'name': name.capitalize()
+    })
