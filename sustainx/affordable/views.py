@@ -11,7 +11,7 @@ def bio_packaging(request):
     return render(request, 'sustain-home/bio-packaging.html')
 
 
-def investores_and_partners(request, name):
-    return render(request, 'sustain-home/investores-and-partners.html', {
-        'name': name.capitalize()
-    })
+# def investores_and_partners(request, name):
+#     return render(request, 'sustain-home/investores-and-partners.html', {
+#         'name': name.capitalize()
+#     })
